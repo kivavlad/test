@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  background-color: var(--dark);
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+
+  @media (max-width: 769px) {
+    height: 45px;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  @media (max-width: 769px) {
+    gap: 18px;
+  }
+}
+
+.location {
+  display: block;
+
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+
+  @media (max-width: 769px) {
+    display: block;
+  }
+}
