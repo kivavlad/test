@@ -25,10 +25,7 @@ body {
 }
 
 .container {
-  max-width: 1116px;
+  max-width: 1148px;
   margin: 0 auto;
-
-  @media (max-width: 769px) {
-    padding: 0 18px;
-  }
+  padding: 0 18px;
 }

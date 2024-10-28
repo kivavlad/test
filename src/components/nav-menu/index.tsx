@@ -14,10 +14,8 @@ export const NavMenu = forwardRef<HTMLDivElement, IProps>(({ active, location, s
   const lineRef = useRef<HTMLDivElement | null>(null);
 
   const handleSelect = (item: string) => {
-    if (window.innerWidth > 769) {
-      setSelectedItem(item);
-    } else {
-      setSelectedItem(item);
+    setSelectedItem(item);
+    if (window.innerWidth < 769) {
       setActive(false);
     }
   }
